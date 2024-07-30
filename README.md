@@ -10,7 +10,7 @@ The Age Calculator is a simple web application that allows users to calculate th
 - [Usage](#usage)
 ## Demo
 
-![Random Password Generator Screenshot](Screenshot.jpg)
+![Age Calculator Screenshot](Screenshot.jpg)
 
 
 
