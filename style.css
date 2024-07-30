@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --bg-color: linear-gradient(to bottom, #021526, #001d37, #002549, #002d5c, #03346e);
+    --text1: #E2E2B6;
+    --btn-bg: #6EACDA;
+    --btn-bg-dark: #021526;
+}
+
+*,
+*:after,
+*:before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color);
+    padding: 40px;
+}
+
+.box{
+    max-width: 500px;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.title-section{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--text1);
+}
+
+.title-section h1{
+    color: var(--text1);
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.title-section h1 span{
+    font-size: 58px;
+    font-weight: 800;
+}
+
+.title-section img{
+    width: 120px;
+}
+
+.input-section{
+    margin: 20px 0px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    border-radius: 5px;
+    border: none;
+}
+
+.input-section h2{
+    color: var(--text1);
+    font-size: 32px;
+    letter-spacing: 0.3px;
+    font-weight: 300;
+}
+
+.input-box{
+    width: 100%;
+    background: var(--text1);
+    display: flex;
+    border-radius: 60px;
+}
+
+.input-box input{
+    flex: 1;
+    font-size: 18px;
+    padding: 10px;
+    padding-left: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input-box button{
+    height: 48px;
+    width: 150px;
+    border-radius: 60px;
+    border: none;
+    background-color: var(--btn-bg);
+    color: var(--btn-bg-dark);
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    border: 1px solid var(--btn-bg);
+}
+
+.input-box button:hover{
+    background-color: var(--btn-bg-dark);
+    border: 1px solid var(--btn-bg-dark);
+    color: var(--btn-bg);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.show-result{
+    display: block;
+    max-width: 100%;
+    padding: 20px;
+    color: var(--text1);
+}
+
+.show-result h3{
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.3px;
+}
+
+.show-result h3 span{
+    font-weight: 700;
+}
+
+@media (max-width: 840px) {
+    .container{
+        padding: 20px;
+    }
+    
+    .box{
+        margin: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .title-section{
+        gap: 20px;
+    }
+
+    .title-section h1{
+        font-size: 28px;
+    }
+    
+    .title-section h1 span{
+        font-size: 36px;
+        font-weight: 700;
+    }
+    
+    .title-section img{
+        width: 70px;
+    }
+    
+    .input-section h2{
+        font-size: 24px;
+    }
+    
+    .input-box input{
+        font-size: 16px;
+        padding: 5px;
+        padding-left: 20px;
+    }
+    
+    .input-box button{
+        height: 40px;
+        width: 100px;
+        font-size: 16px;
+    }
+    
+    .show-result h3{
+        font-size: 32px;
+    }
+}
