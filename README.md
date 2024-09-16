@@ -2,6 +2,8 @@
 
 The Age Calculator is a simple web application that allows users to calculate their age based on their date of birth. The application provides the age in years, months, and days.
 
+To view this project, visit [here](https://aimless-coder.github.io/Age_Calculator/)
+
 ## Table of Contents
 
 - [Demo](#demo)
